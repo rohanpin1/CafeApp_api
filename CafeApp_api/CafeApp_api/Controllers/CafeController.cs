@@ -16,7 +16,7 @@ namespace CafeApp_api.Controllers
         }
 
         [HttpGet("GetUsers")]
-        public async Task<Users> GetUsersAsync()
+        public async Task<List<Users>> GetUsersAsync()
         {
             var users = await _cafeService.GetAllUsers();
             return users;

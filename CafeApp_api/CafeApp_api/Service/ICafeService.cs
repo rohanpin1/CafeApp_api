@@ -4,6 +4,6 @@ namespace CafeApp_api.Service
 {
 	public interface ICafeService
 	{
-		Task<Users> GetAllUsers();
+		Task<List<Users>> GetAllUsers();
 	}
 }

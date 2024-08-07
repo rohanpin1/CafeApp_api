@@ -10,10 +10,11 @@ namespace CafeApp_api.Service
         {
             _configuration = configuration;
         }
-        public async Task<Users> GetAllUsers()
+        public async Task<List<Users>> GetAllUsers()
 		{
 			try
 			{
+				var users = new List<Users>();
 				string connection = _configuration.GetConnectionString("myconn");
 				var openCon = new SqlConnection(connection);
 				
@@ -24,9 +25,20 @@ namespace CafeApp_api.Service
 						Connection = openCon
 					};
 				openCon.Open();
-				var wantedRow = cmd.ExecuteReader();
+				var row = cmd.ExecuteReader();
+
+				while (row.Read())
+				{
+					Users user = new Users();
+					user.Name = (string)row["name"];
+					user.Phone = (string)row["phone"];
+					user.Email = (string)row["email"];
+					user.City = (string)row["city"];
+					users.Add(user);
+				}
+				
 				openCon.Close();
-				return new();
+				return users;
 			}
 			catch (Exception)
 			{
