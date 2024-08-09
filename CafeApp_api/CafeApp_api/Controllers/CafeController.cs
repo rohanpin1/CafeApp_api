@@ -21,5 +21,11 @@ namespace CafeApp_api.Controllers
             var users = await _cafeService.GetAllUsers();
             return users;
         }
+
+        [HttpDelete("DeleteUser")]
+        public void DeleteUser(int id)
+        {
+            _cafeService.DeleteRow(id);
+        }
     }
 }
