@@ -6,5 +6,7 @@ namespace CafeApp_api.Service
 	{
 		Task<List<Users>> GetAllUsers();
 		void DeleteRow(int id);
+		Task<Users> GetUser(int id);
+		void UpdateUser(Users user);
 	}
 }

@@ -27,5 +27,18 @@ namespace CafeApp_api.Controllers
         {
             _cafeService.DeleteRow(id);
         }
-    }
+
+        [HttpGet("GetUser")]
+		public async Task<Users> GetUser(int id)
+        {
+            return  await _cafeService.GetUser(id);
+        }
+
+        [HttpPost("UpdateUser")]
+		public void UpdateUser([FromBody] Users user)
+        {
+            _cafeService.UpdateUser(user);
+        }
+
+	}
 }

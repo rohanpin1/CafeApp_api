@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v5FYZz18c6ITbukKub54lqKZFeY09aclmrQjmkN8OICuqiC5o11oXyP5HO4hm79DfHk0QmZsq492MF3PQKQGdQ==",
+  "dgSpecHash": "J7uX0l4YXFT7GqdndWgcPJm/7AZN+2Cz9451XBjlX+qcbHE5h333MNK8YRJmQ8OO9n3amWJHr9lJGM34d7s+lQ==",
   "success": true,
   "projectFilePath": "E:\\.net core 7\\CafeApp_API\\CafeApp_api\\CafeApp_api\\CafeApp_api\\CafeApp_api.csproj",
   "expectedPackageFiles": [
@@ -44,6 +44,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
