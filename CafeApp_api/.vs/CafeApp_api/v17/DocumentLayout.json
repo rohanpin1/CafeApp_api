@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|e:\\cafeapp\\cafeapp_api\\cafeapp_api\\cafeapp_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|solutionrelative:cafeapp_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|e:\\cafeapp\\cafeapp_api\\cafeapp_api\\cafeapp_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|solutionrelative:cafeapp_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|e:\\cafeapp\\cafeapp_api\\cafeapp_api\\cafeapp_api\\service\\cafeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|solutionrelative:cafeapp_api\\service\\cafeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|e:\\cafeapp\\cafeapp_api\\cafeapp_api\\cafeapp_api\\controllers\\cafecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|solutionrelative:cafeapp_api\\controllers\\cafecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|e:\\cafeapp\\cafeapp_api\\cafeapp_api\\cafeapp_api\\service\\icafeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|solutionrelative:cafeapp_api\\service\\icafeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|e:\\cafeapp\\cafeapp_api\\cafeapp_api\\cafeapp_api\\dto\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6489821-BDEF-410F-828F-9AD4083CDBF7}|CafeApp_api\\CafeApp_api.csproj|solutionrelative:cafeapp_api\\dto\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\appsettings.json",
+              "RelativeDocumentMoniker": "CafeApp_api\\appsettings.json",
+              "ToolTip": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\appsettings.json",
+              "RelativeToolTip": "CafeApp_api\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-12T07:06:40.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\Program.cs",
+              "RelativeDocumentMoniker": "CafeApp_api\\Program.cs",
+              "ToolTip": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\Program.cs",
+              "RelativeToolTip": "CafeApp_api\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T06:54:08.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Users.cs",
+              "DocumentMoniker": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\DTO\\Users.cs",
+              "RelativeDocumentMoniker": "CafeApp_api\\DTO\\Users.cs",
+              "ToolTip": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\DTO\\Users.cs",
+              "RelativeToolTip": "CafeApp_api\\DTO\\Users.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T06:54:09.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CafeService.cs",
+              "DocumentMoniker": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\Service\\CafeService.cs",
+              "RelativeDocumentMoniker": "CafeApp_api\\Service\\CafeService.cs",
+              "ToolTip": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\Service\\CafeService.cs",
+              "RelativeToolTip": "CafeApp_api\\Service\\CafeService.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAiwHwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T06:54:09.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICafeService.cs",
+              "DocumentMoniker": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\Service\\ICafeService.cs",
+              "RelativeDocumentMoniker": "CafeApp_api\\Service\\ICafeService.cs",
+              "ToolTip": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\Service\\ICafeService.cs",
+              "RelativeToolTip": "CafeApp_api\\Service\\ICafeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T06:54:09.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CafeController.cs",
+              "DocumentMoniker": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\Controllers\\CafeController.cs",
+              "RelativeDocumentMoniker": "CafeApp_api\\Controllers\\CafeController.cs",
+              "ToolTip": "E:\\cafeapp\\CafeApp_api\\CafeApp_api\\CafeApp_api\\Controllers\\CafeController.cs",
+              "RelativeToolTip": "CafeApp_api\\Controllers\\CafeController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA1wCcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T06:54:09.39Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
