@@ -127,5 +127,39 @@ namespace CafeApp_api.Service
 				throw;
 			}
 		}
-	}
+
+		public async Task<Users> GetUserByPhoneNumber(string phoneNumber)
+		{
+			try
+			{
+				Users user = new();
+                var openCon = new SqlConnection(_connectionString);
+                var cmd = new SqlCommand()
+                {
+                    CommandText = $"select * from Users where Phone = '{phoneNumber}'",
+                    CommandType = System.Data.CommandType.Text,
+                    Connection = openCon
+                };
+                openCon.Open();
+                var row = cmd.ExecuteReader();
+
+				while (row.Read())
+				{
+                    user.Name = (string)row["name"];
+                    user.Phone = (string)row["phone"];
+                    user.Email = (string)row["email"];
+                    user.City = (string)row["city"];
+                    user.Id = (int)row["id"];
+                }
+				return user;
+
+            }
+			catch (Exception)
+			{
+
+				throw;
+			}
+		}
+
+    }
 }

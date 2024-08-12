@@ -40,5 +40,12 @@ namespace CafeApp_api.Controllers
             _cafeService.UpdateUser(user);
         }
 
-	}
+        [HttpGet("GetUserByPhoneNumber")]
+        public async Task<Users> GetUserByPhoneNumber(string phoneNumber)
+        {
+            return await _cafeService.GetUserByPhoneNumber(phoneNumber);
+        }
+
+
+    }
 }
