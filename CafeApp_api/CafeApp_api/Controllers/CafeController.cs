@@ -46,6 +46,10 @@ namespace CafeApp_api.Controllers
             return await _cafeService.GetUserByPhoneNumber(phoneNumber);
         }
 
-
+        [HttpPost("RegisterLoginUser")]
+        public async Task<bool> RegisterLoginUser([FromBody]AuthenticateUser user)
+        {
+            return await _cafeService.RegisterLoginUser(user);
+        }
     }
 }

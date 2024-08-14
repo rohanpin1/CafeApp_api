@@ -8,8 +8,8 @@ namespace CafeApp_api.Service
 		void DeleteRow(int id);
 		Task<Users> GetUser(int id);
 		void UpdateUser(Users user);	
-
 		Task<Users> GetUserByPhoneNumber(string phoneNumber);
+		Task<bool> RegisterLoginUser(AuthenticateUser user);
 		
 	}
 }
