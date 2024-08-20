@@ -1,5 +1,8 @@
-﻿using CafeApp_api.DTO;
+﻿using CafeApp_api.Attributes;
+using CafeApp_api.DTO;
+using CafeApp_api.ResponseRequests;
 using CafeApp_api.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,7 +10,8 @@ namespace CafeApp_api.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class CafeController : ControllerBase
+    
+    public class CafeController : ControllerBase
 	{
         private readonly ICafeService _cafeService;
         public CafeController(ICafeService cafeService)
@@ -50,6 +54,19 @@ namespace CafeApp_api.Controllers
         public async Task<bool> RegisterLoginUser([FromBody]AuthenticateUser user)
         {
             return await _cafeService.RegisterLoginUser(user);
+        }
+
+        [HttpPost("RegisterUser")]
+        public async Task RegisterUser([FromForm]Users user)
+        {
+
+        }
+
+        [AllowAnonymous]
+        [HttpPost("Login")]
+        public async Task<LoginResponse> Login([FromBody] AuthenticateUser user)
+        {
+            return await _cafeService.Login(user);
         }
     }
 }

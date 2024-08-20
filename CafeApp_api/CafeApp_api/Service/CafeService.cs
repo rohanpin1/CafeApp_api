@@ -1,4 +1,5 @@
 ﻿using CafeApp_api.DTO;
+using CafeApp_api.ResponseRequests;
 using Microsoft.Data.SqlClient;
 using Newtonsoft.Json;
 using System.Net;
@@ -11,10 +12,12 @@ namespace CafeApp_api.Service
     {
         private readonly IConfiguration _configuration;
         private readonly string _connectionString;
-        public CafeService(IConfiguration configuration)
+        private readonly ITokenService _tokenService;
+        public CafeService(IConfiguration configuration, ITokenService tokenService)
         {
             _configuration = configuration;
             _connectionString = _configuration.GetConnectionString("myconn");
+            _tokenService = tokenService;
 
         }
         public async Task<List<Users>> GetAllUsers()
@@ -188,7 +191,7 @@ namespace CafeApp_api.Service
                 }
                 else
                 {
-                    string twofacode = Is2FAEnabled == 1 ?  Random2FAString() : string.Empty;
+                    string twofacode = Is2FAEnabled == 1 ? Random2FAString() : string.Empty;
 
                     cmd = new SqlCommand()
                     {
@@ -262,5 +265,53 @@ namespace CafeApp_api.Service
             }
         }
 
+        public async Task<LoginResponse> Login(AuthenticateUser user)
+        {
+            try
+            {
+                var openCon = new SqlConnection(_connectionString);
+                int Is2FAEnabled = user.Is2FAEnabled == true ? 1 : 0;
+                var cmd = new SqlCommand()
+                {
+                    CommandText = $"select * from AuthenticateUsers where Username = '{user.Email}' and Password = '{user.Password}'",
+                    CommandType = System.Data.CommandType.Text,
+                    Connection = openCon
+                };
+
+                openCon.Open();
+                var isExist = cmd.ExecuteReader();
+                LoginResponse res = new();
+                string twofacode,email = string.Empty;
+                bool isTFA = false;
+                while (isExist.Read())
+                {
+                    twofacode = (string)isExist["twofacode"];
+                    isTFA = (bool)isExist["istwofa"];      
+                    email = (string)isExist["username"];
+                }
+                if (!string.IsNullOrEmpty(email))
+                {
+                    string token = await _tokenService.GetToken(user);
+
+                    res.Is2FAEnabled = isTFA;
+                    res.FlagCode = 1;
+                    res.Token = token;
+                    return res;
+                }
+                else
+                {
+                    res.Token = null;
+                    res.FlagCode = 0;
+                    res.Is2FAEnabled = false;
+                    return res;
+                }
+                
+            }
+            catch (Exception)
+            {
+                return new() { FlagCode = 0, Token = null ,Is2FAEnabled = false};
+                throw;
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CafeApp_api.DTO;
+using CafeApp_api.ResponseRequests;
 
 namespace CafeApp_api.Service
 {
@@ -10,6 +11,8 @@ namespace CafeApp_api.Service
 		void UpdateUser(Users user);	
 		Task<Users> GetUserByPhoneNumber(string phoneNumber);
 		Task<bool> RegisterLoginUser(AuthenticateUser user);
+		Task<LoginResponse> Login(AuthenticateUser user);
+		
 		
 	}
 }
